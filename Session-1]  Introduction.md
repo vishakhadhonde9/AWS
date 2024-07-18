@@ -1,0 +1,41 @@
+# Cloud Computing-
+
+- Cloud Computing is on-demand delivery of Computing services over the internet.
+- These services include servers, storage, compute, databases and networking.
+- Cloud Computing also referred as the accessing and storing of data. The data can be anything like images, videos, audios, documents, files etc.
+- Cloud providers is the ‘Pay as you go’ principle-based services i.e. you only have to pay for the service which you are using.
+
+# Cloud Service Providers-
+- Cloud computing is in huge demand so, big organization providing the Cloud services are called as Cloud Service Providers.
+- Amazon AWS, Microsoft Azure, Google Cloud, Alibaba cloud, IBM cloud, Oracle cloud and VMware Cloud etc. are some Cloud Computing service Provider.
+
+# On-premises VS Cloud-
+
+| Feature                  | On-Premises                                 | Cloud Computing                           |
+|--------------------------|---------------------------------------------|-------------------------------------------|
+| **Infrastructure Location** | Physical location within the organization | Hosted by cloud service provider, accessed over the internet |
+| **Initial Costs**        | High upfront costs for hardware and software | Lower upfront costs, pay-as-you-go model  |
+| **Maintenance**          | Handled internally by the organization      | Managed by the cloud provider             |
+| **Scalability**          | Requires purchasing and installing hardware | Easily scalable up or down based on demand |
+| **Control**              | Complete control over hardware and data     | Less control over hardware, but manage applications and data configurations |
+| **Security**             | Managed internally, requires expertise      | Managed by the provider with advanced measures; shared responsibility model |
+| **Flexibility**          | Less flexible, changes and upgrades take time | Highly flexible, quick deployment of resources and services |
+
+
+# Cloud Computing Models-
+- Cloud architecture can be divided into:
+
+## Deployment Model-
+- Based on the amount of data you want to store and who has access to the infrastructure.
+- The cloud deployment model identifies the specific type of cloud environment based on ownership, scale, and access, as well as the cloud’s nature and purpose.
+- Depolyment model further divided into:
+  - Public Cloud
+  - Private Cloud
+  - Hybrid Cloud
+  - Community Cloud
+  - Multi-Cloud 
+
+
+
+## Service Model-
+- 
