@@ -25,17 +25,30 @@
 # Cloud Computing Models-
 - Cloud architecture can be divided into:
 
-## Deployment Model-
+# Deployment Model-
 - Based on the amount of data you want to store and who has access to the infrastructure.
 - The cloud deployment model identifies the specific type of cloud environment based on ownership, scale, and access, as well as the cloud’s nature and purpose.
-- Depolyment model further divided into:
-  - Public Cloud
-  - Private Cloud
-  - Hybrid Cloud
-  - Community Cloud
-  - Multi-Cloud 
+- Depolyment model further divided into :
+## Public Cloud-
+- Anyone can access services or resources from anywhere.
+- Managed by the cloud provider.
+- Highly scalable, as resources are virtually unlimited.
+- Pay-as-you-go model, no need for large upfront investments.
+## Private Cloud-
+- There is no need to share your hardware with anyone else.
+- A cloud environment dedicated to a single organization.
+- Managed internally or by a third-party provider.
+- Less scalable.
+- Higher upfront costs due to the need to purchase and maintain hardware.
+# Hybrid Cloud-
+- A combination of public and private clouds.
+- More costly than public cloud.
+- Managing hybrid cloud is difficult.
+# Community Cloud-
+- It allows system or services to be accessible by group of organization.
+- Managed by internally or by third party.
+- Cost efficient, as cost shared between community memebers.
 
+# Service Model-
 
-
-## Service Model-
 - 
