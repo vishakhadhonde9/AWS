@@ -51,4 +51,15 @@
 
 # Service Model-
 
+# IaaS-
+
+- Delivers on-demand services or resources.
+- provides underlying os, security, storage and networking.etc
+- Usually works on pay-as-you-go model.
+- Overall, it manages infrastructure, so known as hardware as service.
+
+# Paas-
+- PaaS provides platform and environment to allow developers to build application or access services.
+- Provides a platform allowing customers to develop, run, and manage applications without dealing with the underlying infrastructure.
+- Customer only manages/control deployed application instead of infrastructure.
 - 
