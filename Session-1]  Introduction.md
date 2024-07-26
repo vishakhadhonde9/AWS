@@ -56,10 +56,27 @@
 - Delivers on-demand services or resources.
 - provides underlying os, security, storage and networking.etc
 - Usually works on pay-as-you-go model.
+- You manages everything apart from physical server.
 - Overall, it manages infrastructure, so known as hardware as service.
 
 # Paas-
 - PaaS provides platform and environment to allow developers to build application or access services.
 - Provides a platform allowing customers to develop, run, and manage applications without dealing with the underlying infrastructure.
 - Customer only manages/control deployed application instead of infrastructure.
-- 
+
+# Saas- 
+- It provides sevices or application over the internet.
+- It reduces need of installing and maintaining softwares.
+- Instead of installing softwares, we simply access it via internet.
+- Most SaaS applications can be run directly from a web browser without any downloads or installations required.
+- The SaaS applications are sometimes called Web-based software, on-demand software, or hosted software.
+
+
+| Feature                  | IaaS                              | PaaS                             | SaaS                           |
+|--------------------------|-----------------------------------|----------------------------------|--------------------------------|
+| **Definition**           | Virtualized computing resources   | Hardware and software tools for development | Software applications delivered over the internet |
+| **Examples**             | AWS, Microsoft Azure, GCP         | Heroku, Google App Engine, Azure App Services | Google Workspace, Office 365, Salesforce |
+| **Use Cases**            | Managing own applications, middleware, and data | Application development and deployment | Access to software applications |
+| **Control and Flexibility** | Maximum control and flexibility | Less control over infrastructure | Minimal control |
+| **Management Responsibility** | Users manage applications, data, runtime, middleware, OS | Users manage applications and data | Service provider manages everything |
+| **Provider's Responsibility** | Service provider manages virtualization, servers, storage, networking | Service provider manages runtime, middleware, OS, virtualization, servers, storage, networking | Users interact only with the application |
