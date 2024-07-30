@@ -20,4 +20,19 @@
 
 - Type 1 or “bare-metal” hypervisors are installed directly on the physical hardware of the host machine.
 - Type 1 hypervisors interact with the underlying physical resources, replacing the traditional operating system altogether.
-- They most commonly appear in virtual server scenarios. 
+- They most commonly appear in virtual server scenarios.
+
+
+## Type 2 hypervisors-
+
+- Type 2 hypervisors also known as hosted hypervisor.
+- It runs on top of a regular operating system (the host).
+- This means it relies on the host OS to manage the computer's hardware resources, like CPU, memory, and storage, to create and run virtual machines
+
+![image](https://github.com/user-attachments/assets/6b7d7162-a542-4f2f-a04d-5c09385cf24c)
+
+
+# AWS Global Infrastructure-
+- 
+
+
