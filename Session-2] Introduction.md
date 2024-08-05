@@ -45,3 +45,6 @@
 - Region is a specific geographical area where AWS has multiple data centers.
 - Each region allows you to store and process data closer to your location, providing better performance and reliability.
 
+## Availability Zones -
+- Inside each region, there are multiple Availability Zones.
+- An Availability Zone is made up of one or more data centers with backup power, networking, and connectivity.
