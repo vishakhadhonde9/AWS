@@ -33,7 +33,9 @@
 
 
 # AWS Global Infrastructure-
+## Data Center -
 - A data center is a physical location that stores computing machines and their related hardware equipment.
 - These data centers allow businesses to store data, run applications, and access computing power over the internet, without needing to maintain their own hardware.
 
-
+## Region -
+- 
