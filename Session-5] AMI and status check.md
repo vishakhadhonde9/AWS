@@ -22,3 +22,58 @@
 ## 4] Custom AMIs: 
 - These are created by you or your organization. 
 - They are tailored to meet your specific requirements, including custom software configurations, settings, and applications.
+
+# Status Check-
+- In Amazon EC2, status checks monitor the health of your instances.
+- Amazon EC2 performs these checks automatically and reports their results to help you identify issues.
+- Amazon EC2 performs automated checks on every running EC2 instance to identify hardware and software issues.
+- You can view the results of these status checks to identify specific and detectable problems.
+- There are two types of status checks:
+     - System status checks
+     - Instance status checks
+     - Attached EBS status checks
+
+## 1] System Status Check-
+- ystem status checks monitor the AWS systems on which your instance runs.
+- These checks detect underlying problems with your instance that require AWS involvement to repair.
+- When a system status check fails, you can choose to wait for AWS to fix the issue, or you can resolve it yourself.
+- These checks ensure the physical machine (hardware) hosting your instance is working correctly. It as a health check for the underlying infrastructure provided by AWS.
+- The following are examples of problems that can cause system status checks to fail:
+     - Loss of network connectivity
+     - Loss of system power
+     - Software issues on the physical host
+     - Hardware issues on the physical host that impact network reachability
+- If a system status check fails, we increment the StatusCheckFailed_System metric.
+
+
+## 2] Instance status checks-
+- Instance status checks monitor the software and network configuration of your individual instance.
+- These checks ensure that your specific EC2 instance is healthy and running correctly. It's like a health check for the virtual machine you control.
+- The following are examples of problems that can cause instance status checks to fail:
+      - Failed system status checks
+      - Incorrect networking or startup configuration
+      - Exhausted memory
+      - Corrupted file system
+      - Incompatible kernel
+- If an instance status check fails, we increment the StatusCheckFailed_Instance metric.
+
+## 3] Attached EBS status checks-
+- Attached EBS status checks are a crucial aspect of monitoring your EC2 instances.
+- They ensure that the Amazon EBS (Elastic Block Store) volumes attached to your instances are functioning correctly and able to perform input/output (I/O) operations.
+- The following are examples of issues that can cause attached EBS status checks to fail:
+      - Hardware or software issues on the storage subsystems underlying the EBS volumes
+      - Hardware issues on the physical host that impact reachability of the EBS volume.
+      - Connectivity issues between the instance and EBS volumes
+
+
+
+
+
+
+
+
+
+
+
+
+
