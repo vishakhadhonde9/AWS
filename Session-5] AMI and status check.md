@@ -67,7 +67,10 @@
 - The StatusCheckFailed_AttachedEBS metric that indicates impairment if one or more of the EBS volumes attached to the instance are unable to complete I/O operations. 
 
 
-
+# Launch Template-
+- You can use a launch template to store instance launch parameters so that you do not have to specify them every time you launch an instance.
+- It includes details like the instance type, AMI (Amazon Machine Image), storage options, and any configuration settings you want to apply.
+- When you want to launch new instances, you use the launch template to automatically apply all those settings, saving time and ensuring consistency.
 
 
 
