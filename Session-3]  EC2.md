@@ -77,6 +77,18 @@
     - Allow or Block: Security groups can allow or block traffic based on rules you set. 
     For example, you can set a rule to allow access only from certain IP addresses or to block traffic from all sources except your own network.
 
+# EC2 Instance States-
+| **Instance State** | **Description**                                                                                                  | **Transition**                                |
+|--------------------|------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
+| **Pending**        | The instance is in the process of being launched. The instance is initializing and is not yet available for use. | From "Pending," it transitions to "Running" when initialization is complete. |
+| **Running**        | The instance is fully operational and running. It is available for use, and you can connect to it and perform operations. | From "Running," it can transition to "Stopping," "Hibernating," or "Terminating." |
+| **Stopping**       | The instance is in the process of being stopped. It is shutting down but is not yet fully stopped.               | From "Stopping," it transitions to "Stopped" when the shutdown process is complete. |
+| **Stopped**        | The instance is stopped and not running. The instance retains its data and configuration, and does not incur charges for instance usage. | From "Stopped," it can transition to "Starting," "Hibernating," or "Terminating." |
+| **Starting**       | The instance is in the process of starting up from a stopped state. It is transitioning to the "Running" state. | From "Starting," it transitions to "Running" when it is fully operational. |
+| **Shutting-down**  | The instance is in the process of being terminated. It is shutting down and will soon be fully terminated.        | From "Shutting-down," it transitions to "Terminated" when the termination process is complete. |
+| **Terminated**     | The instance has been terminated and is permanently removed. It cannot be started again, and all associated resources are released. | Once in "Terminated," the instance cannot transition to any other state. |
+| **Hibernating**    | The instance state is saved to EBS, and the instance is stopped. It retains the in-memory data and processes.      | From "Hibernating," it transitions to "Stopped." When restarted, it resumes from the saved state. |
+
 
 
 
