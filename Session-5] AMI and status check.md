@@ -64,7 +64,7 @@
       - Hardware or software issues on the storage subsystems underlying the EBS volumes
       - Hardware issues on the physical host that impact reachability of the EBS volume.
       - Connectivity issues between the instance and EBS volumes
-
+- The StatusCheckFailed_AttachedEBS metric that indicates impairment if one or more of the EBS volumes attached to the instance are unable to complete I/O operations. 
 
 
 
