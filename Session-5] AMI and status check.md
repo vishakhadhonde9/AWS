@@ -34,7 +34,7 @@
      - Attached EBS status checks
 
 ## 1] System Status Check-
-- ystem status checks monitor the AWS systems on which your instance runs.
+- System status checks monitor the AWS systems on which your instance runs.
 - These checks detect underlying problems with your instance that require AWS involvement to repair.
 - When a system status check fails, you can choose to wait for AWS to fix the issue, or you can resolve it yourself.
 - These checks ensure the physical machine (hardware) hosting your instance is working correctly. It as a health check for the underlying infrastructure provided by AWS.
