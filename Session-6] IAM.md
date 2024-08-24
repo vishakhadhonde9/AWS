@@ -31,21 +31,34 @@
    - Groups can have many users.
    - Users can belong to many groups.
    - Groups cannot belong to groups.
-     
-# IAM Role-
-- IAM Role is a set of permissions that define what actions are allowed on which resources.
-- It is special set of permissions that you can assign to different users/entities.
-- These permissions are attached to the role, not to an IAM User or a group.
-- A role is not uniquely associated with a single person; it can be used by anyone who needs it.
-- IAM role is also attached with other services.
-
-
 
 # IAM policies-
 - To manage access and provide permissions to AWS services and resources, you create IAM policies and attach them to an IAM identity.
 - Whenever an IAM identity makes a request, AWS evaluates the policies associated with them.
 - IAM policy is a JSON document that specifies permissions. It defines what actions are allowed or denied on resources.
 - Policies can be attached to IAM users, groups, or roles to grant or restrict access.
+
+## Types of policies-
+# 1)AWS Managed Policies-
+- These are predefined policies created and maintained by AWS.
+- Examples- AmazonS3ReadOnlyAccess, AmazonEC2FullAccess etc.
+
+# 2)Customer Managed Policies-
+- These are policies created and managed by you (or your organization).
+- They allow for more customization than AWS managed policies.
+- Custom policies tailored to specific needs, like granting permissions only for certain S3 buckets or EC2 instances.
+
+# 3)Inline Policies-
+- An inline policy is a policy created for a single IAM identity (a user, user group, or role).
+- Inline policies maintain a strict one-to-one relationship between a policy and an identity.
+- They are deleted when you delete the identity.
+- They are not reusable like managed policies.
+
+
+# IAM Role-
+- IAM Role is a set of permissions that define what actions are allowed on which resources.
+- It is special set of permissions that you can assign to different services like EC2, S3 and many more.
+- These permissions are attached to the role, not to an IAM User or a group.
 
 
 # Multi-Factor Authentication-
