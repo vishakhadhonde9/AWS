@@ -35,13 +35,27 @@
 
 # 2] Hard Disk Drive-
 - Hard Disk Drives are usually preferred in cases where high Throughput is required during a large and sequential I/O operation such as reading video files, logs processing, etc.
-- HDDs are cheaper compared to SSDs and ideal for tasks that require high throughput.
-- 
+- HDDs are
+- cheaper compared to SSDs and ideal for tasks that require high throughput.
+- It can be of two types: Throughput Optimized HDD and Cold HDD.
+- **Throughput Optimized HDD (st1)-**
+      - It provide high throughput for accessing large and sequential data and support frequently accessed storage requirements.
+- **Cold HDD (sc1)-**
+      - Designed for less frequently accesses workloads but higher throughput.
 
+# 3] Magnetic Standard-
+- Magnetic (standard) volumes are previous generation volumes.
+- They are suited for workloads with small datasets where data is accessed infrequently and performance is not of primary importance.
 
-
-
-
+| **Attribute**                | **Magnetic EBS Volume**                  |
+|------------------------------|------------------------------------------|
+| **Volume Size**              | 1 GiB – 1 TiB                           |
+| **Maximum IOPS per Volume**  | 40 – 200 IOPS                            |
+| **Maximum Throughput per Volume** | 40 – 90 MiB/s                        |
+| **Boot Volume**              | Supported                                |
+| **Multi-Attached Volumes**   | Not supported                            |
+| **Latency**                  | Higher latency compared to SSDs and HDDs|
+| **Price**                    | Lower cost compared to SSDs and HDDs    |
 
 
 
