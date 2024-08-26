@@ -5,7 +5,6 @@
 - Can attaches to single EC2 at time.
 - Both EBS Volume and EC2 will be in same AZ.
 
-
 # Types of EBS Volume-
 - **1] Solid State Drive-**
 - **2] Hard Disk Drive-**
@@ -13,6 +12,7 @@
 
 
 ## Solid State Drive(SSD)-
+- SSD-backed volumes are optimized for IOPS, which are best for workloads involving frequent read/write operations with small I/O size.
 - SSD is bootable drive
 - SSD have two types-
 
@@ -35,8 +35,8 @@
 
 # 2] Hard Disk Drive-
 - Hard Disk Drives are usually preferred in cases where high Throughput is required during a large and sequential I/O operation such as reading video files, logs processing, etc.
-- HDDs are
-- cheaper compared to SSDs and ideal for tasks that require high throughput.
+- HDDs are cheaper compared to SSDs and ideal for tasks that require high throughput.
+- HDD is not  botable.
 - It can be of two types: Throughput Optimized HDD and Cold HDD.
 - **Throughput Optimized HDD (st1)-**
       - It provide high throughput for accessing large and sequential data and support frequently accessed storage requirements.
