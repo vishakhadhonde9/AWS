@@ -44,13 +44,13 @@
               3. Create Partitions using `fdisk`:
                  fdisk command is used to create, modify and delete partitions.
                
-                 sudo fdisk /dev/xvdf
+                    sudo fdisk /dev/xvdf
           
-                 - -n-create new partitions
-                 - -d-delete partitions
-                 - -p-print partition table
-                 - -w-write changed and exit
-                 - -q-quit
+                 - n-create new partitions
+                 - d-delete partitions
+                 - p-print partition table
+                 - w-write changed and exit
+                 - q-quit
    
                  - Follow the steps:
                    - Press `n` to create a new partition.
