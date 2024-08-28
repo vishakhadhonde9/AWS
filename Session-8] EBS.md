@@ -42,9 +42,16 @@
                  - This command lists all available block devices. Identify your newly attached EBS volume.
               
               3. Create Partitions using `fdisk`:
+                 fdisk command is used to create, modify and delete partitions.
                
                  sudo fdisk /dev/xvdf
-               
+          
+                 - -n-create new partitions
+                 - -d-delete partitions
+                 - -p-print partition table
+                 - -w-write changed and exit
+                 - -q-quit
+   
                  - Follow the steps:
                    - Press `n` to create a new partition.
                    - Select `p` for primary partition.
@@ -59,7 +66,7 @@
                  - The new partition should appear as `/dev/xvdf1`.
 
 
-2. Creating a File System
+3. Creating a File System
 
                   1. Create a File System:
                      - to create an ext4 file system:
@@ -69,7 +76,7 @@
                        - XFS: `sudo mkfs.xfs /dev/xvdf1`
                        - EXT3: `sudo mkfs.ext3 /dev/xvdf1`
 
-3. Mounting Partitions
+4. Mounting Partitions
 
                   1. Create a Mount Point:
                      sudo mkdir /mnt/mydata
@@ -82,7 +89,7 @@
                      df -h
                      - This command shows the mounted file systems. Verify that `/dev/xvdf1` is mounted to `/mnt/mydata`.
 
-4. Permanent Mount Configuration
+5. Permanent Mount Configuration
    
         To ensure the partition mounts automatically after a reboot, update the `/etc/fstab` file.
 
