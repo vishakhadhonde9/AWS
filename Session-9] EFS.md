@@ -31,6 +31,40 @@
 | **Throughput Modes**   | Determined by volume size and type                               | Bursting, Provisioned                                                 |
 | **Data Persistence**   | Persistent within the AZ                                         | Persistent across multiple AZs                                        |
 
+# Steps-
+1. Launch two EC2 instances in the same VPC and subnet. Use Amazon Linux 2 AMI.
 
+2. create an EFS File System
 
+3. Install NFS Client on EC2 Instances
+   - SSH into each EC2 instance.
+   - Install the NFS client using the following commands:
+   
+     sudo yum -y update
+     sudo yum -y install nfs-utils
+4. Mount the EFS File System
+   - Create a directory to mount the EFS:
+     sudo mkdir /mnt/efs
 
+   - Mount the EFS file system:
+     sudo mount -t nfs4 -o nfsvers=4.1 <EFS_DNS_Name>:/ /mnt/efs
+ 
+   - Verify the mount:
+     df -h
+5. Test the File System
+   - Create a test file:
+     echo "Hello EFS" | sudo tee /mnt/efs/hello.txt
+    
+   - Verify the file is accessible from both EC2 instances:
+      cat /mnt/efs/hello.txt
+     
+
+ Cleanup
+
+- Unmount the EFS file system:
+  sudo umount /mnt/efs
+ 
+- Terminate the EC2 instances.
+- Delete the EFS file system from the console.
+
+   
