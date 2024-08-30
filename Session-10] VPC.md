@@ -35,8 +35,30 @@
 #### Rules for Traffic:
     - Inbound Rules: Define what kind of incoming traffic (data coming into your server) is allowed. 
     - Outbound Rules: Define what kind of outgoing traffic (data going from your server) is allowed.
-# Network Access Control Lists (NACLs)-
-- Network Access Control List (NACL) is a security feature used to control inbound and outbound traffic at the subnet level within a Virtual Private Cloud (VPC). It provides an additional layer of security by setting rules that determine which traffic is allowed or denied to and from resources within a subnet
+    
+# Network Access Control List (NACL)-
+- Network Access Control List (NACL) is used to control inbound and outbound traffic at the subnet level within a Virtual Private Cloud (VPC).
+- It provides an additional layer of security by setting rules that determine which traffic is allowed or denied to and from resources within a subnet.
+- It is act as firewall at subnet level.
+
+# VPC Limits
+
+| Component                     | Default Limit |
+|-------------------------------|---------------|
+| VPC                           | 5 per Region  |
+| Subnets                       | 200 per VPC   |
+| Route Tables                  | 200 per VPC   |
+| Internet Gateway              | 5 per VPC     |
+| NAT Gateway                   | 5 per AZ      |
+| Virtual Private Gateway       | 5 per Region  |
+| Customer Gateway              | 50 per Region |
+| VPC Peering Connection        | 50 per VPC    |
+| Security Groups               | 2,500 per VPC |
+| Network ACLs                  | 200 per VPC   |
+| Elastic IP Addresses          | 5 per Region  |
+| DHCP Option Sets              | 10 per Region |
+| Egress-Only Internet Gateway  | 5 per VPC     |
+| Transit Gateway               | 5 per Region  |
 
 
 
