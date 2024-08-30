@@ -30,7 +30,13 @@
 - Instances in a private subnet can connect to services outside your VPC but external services cannot initiate a connection with those instances.
 
 # Security Group-
-
+- It is act as firewall that control traffic to instance.
+- It helps protect your server by specifying which types of network traffic are allowed to reach it.
+#### Rules for Traffic:
+    - Inbound Rules: Define what kind of incoming traffic (data coming into your server) is allowed. 
+    - Outbound Rules: Define what kind of outgoing traffic (data going from your server) is allowed.
+# Network Access Control Lists (NACLs)-
+- Network Access Control List (NACL) is a security feature used to control inbound and outbound traffic at the subnet level within a Virtual Private Cloud (VPC). It provides an additional layer of security by setting rules that determine which traffic is allowed or denied to and from resources within a subnet
 
 
 
