@@ -29,6 +29,11 @@
 - NAT Gateway allows instances in a private subnet within a Virtual Private Cloud to initiate outbound traffic to the internet or other services while preventing inbound traffic from the internet.
 - Instances in a private subnet can connect to services outside your VPC but external services cannot initiate a connection with those instances.
 
+# Route Tables-
+- A route table contains a set of rules, called routes, that determine where network traffic is directed.
+- When you create a VPC, AWS creates a route table called the main route table.
+- You cannot delete the main route table.
+
 # Security Group-
 - It is act as firewall that control traffic to instance.
 - It helps protect your server by specifying which types of network traffic are allowed to reach it.
