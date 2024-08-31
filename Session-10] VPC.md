@@ -65,6 +65,14 @@
 | Egress-Only Internet Gateway  | 5 per VPC     |
 | Transit Gateway               | 5 per Region  |
 
+# Diffrenece Between Security Group and NACl-
+| **Aspect**                   | **Security Groups**                                                                             | **Network Access Control Lists (NACLs)**                                                            |
+|------------------------------|------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| **Rules Supported**          | Supports only **allow** rules. By default, all traffic is denied unless explicitly allowed. Cannot deny specific traffic. | Supports both **allow** and **deny** rules. By default, all traffic is denied unless explicitly allowed or denied. |
+| **Statefulness**             | **Stateful:** Inbound rules automatically reflect in outbound traffic. For example, if you allow inbound traffic on port 80, outbound responses are allowed automatically. | **Stateless:** Inbound and outbound rules are independent. Changes in inbound rules do not affect outbound rules. For example, if you add an inbound rule for port 80, you must separately add an outbound rule for port 80. |
+| **Association**              | Associated with **EC2 instances**                       | Associated with **subnets** within a VPC.                                                           |
+| **Rule Evaluation**          | All rules are evaluated before deciding whether to allow traffic.                              | Rules are evaluated in order, starting from the lowest number. The first matching rule determines the action. |
+| **Application**              | Applied to an instance **at launch** or by modifying instance attributes.                      | Automatically applied to all instances **within the subnet**.                                        |
 
 
 
