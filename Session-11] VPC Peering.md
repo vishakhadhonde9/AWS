@@ -19,3 +19,17 @@
   - Gateway Endpoints are virtual devices that are used to connect to AWS services.
   - They add a route to your VPC route tables that points to the service.
  
+# Placement Group-
+- A placement group is a logical grouping of instances within an Availability Zone that helps you to influence the placement of individual EC2 instances to meet specific requirements for performance, latency, or compliance.
+- To create a placement group, there are three placement strategies:
+  - Cluster
+  - Partition
+  - Spread
+
+## Cluster -
+- A cluster placement group is a logical grouping of instances within a single Availability Zone.
+
+
+## Spread -
+- A spread placement group is a logical grouping of instances that allows you to place instances on distinct hardware to reduce the risk of simultaneous failures that might occur when instances share the same equipment.
+- 
