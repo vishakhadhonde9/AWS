@@ -20,7 +20,7 @@
   - They add a route to your VPC route tables that points to the service.
  
 # Placement Group-
-- A placement group is a logical grouping of instances within an Availability Zone that helps you to influence the placement of individual EC2 instances to meet specific requirements for performance, latency, or compliance.
+- When you launch a new EC2 instance, the EC2 service attempts to place the instance in such a way that all of your instances are spread out across underlying hardware to minimize correlated failures.
 - To create a placement group, there are three placement strategies:
   - Cluster
   - Partition
@@ -28,8 +28,10 @@
 
 ## Cluster -
 - A cluster placement group is a logical grouping of instances within a single Availability Zone.
-
-
+- To achieve low-latency network performance and high-bandwidth connectivity between instances.
 ## Spread -
 - A spread placement group is a logical grouping of instances that allows you to place instances on distinct hardware to reduce the risk of simultaneous failures that might occur when instances share the same equipment.
-- 
+- To distribute instances across underlying hardware to reduce the risk of correlated failures.
+
+## Partition-
+- To distribute instances across multiple logical partitions within a single Availability Zone to minimize the risk of correlated hardware failures affecting all instances in the group.
