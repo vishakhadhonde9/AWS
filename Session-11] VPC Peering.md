@@ -35,3 +35,7 @@
 
 ## Partition-
 - To distribute instances across multiple logical partitions within a single Availability Zone to minimize the risk of correlated hardware failures affecting all instances in the group.
+
+# NIC-
+- Network interface also known as an Elastic Network Interface is a virtual network interface that can be attached to an instance in a VPC.
+- It provides a way for instances to connect to a network and communicate with other instances or external networks. 
