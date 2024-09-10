@@ -11,3 +11,11 @@ Horizontal Scaling involves adding more instances of a resource to distribute th
 
 # Vertical Scaling-
 Vertical Scaling involves increasing the capacity of a single instance or server, such as upgrading its CPU, memory, or storage.
+
+# Manual Scaling – 
+- In Manual Scaling, the number of instances is manually adjusted.
+- You can manually increase or decrease the number of instances through a CLI or console. 
+
+# Dynamic Scaling – 
+- This is yet another type of Auto Scaling in which the number of EC2 instances is changed automatically depending on the signals received.
+- Dynamic Scaling is a good choice when there is a high volume of unpredictable traffic.
