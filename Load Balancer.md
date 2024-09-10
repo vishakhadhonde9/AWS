@@ -24,5 +24,5 @@
  -  Support TCP and UDP protocols for routing.
 
 #### 3] Gateway Load Balancer-
--  Operates at Layer 3 (Network Layer) and Layer 4 (Transport Layer) of the OSI model.
--  
+- Operates at Layer 3 (Network Layer) and Layer 4 (Transport Layer) of the OSI model.
+- Gateway Load Balancer helps you easily deploy, scale, and manage your third-party virtual appliances like firewall.
