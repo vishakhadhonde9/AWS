@@ -33,6 +33,8 @@
 - Versioning-enabled buckets can help you recover objects from accidental deletion or overwrite.
 - When you delete an object in a versioned bucket, S3 does not permanently remove the object. Instead, it creates a "delete marker" that becomes the current version. The actual object still exists and can be restored if needed.
 
+# Storage Classes in S3
+
 
 
 
