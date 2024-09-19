@@ -6,8 +6,7 @@
     - aws ec2 run-instances --image-id ami-xxxxxxxx --count 1 --instance-type t2.micro --key-name MyKeyPair --security-groups MySecurityGroup
 
 - Key-pair creation:
-    - aws ec2 create-key-pair --key-name MyKeyPair --query 'KeyMaterial' --output text 
-      > MyKeyPair.pem
+    - aws ec2 create-key-pair --key-name MyKeyPair --query 'KeyMaterial' --output text> MyKeyPair.pem
     - chmod 400 MyKeyPair.pem
     - ssh -i MyKeyPair.pem ec2-user@<instance-public-ip>
 
