@@ -21,6 +21,16 @@
 - CloudWatch Logs enables you to centralize the logs from all of your systems, applications, and AWS services that you use, in a single, highly scalable service.
 - It allows you to monitor, store, and access log files from various AWS services.
 
+#### Steps-
+- Create IAM Role.
+- Launch EC2 Instance and attached IAM role to it.
+- Connect using SSH to your EC2:
+        - yum install httpd
+        - sudo yum install amazon-cloudwatch-agent
+        - sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-config-wizard
+        - sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -s -c file:configuration-file-path
+        - Log file path:/var/log/apache2/access.log
+        - 
 
 ## Cloudwatch Events-
 - CloudWatch Events delivers a near real-time stream of system events that describe changes in AWS resources.
