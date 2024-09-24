@@ -36,6 +36,34 @@
 - Instead, the non-relational database uses a storage model optimized for specific requirements of the type of data being stored.
 - Some of the more popular NoSQL databases are MongoDB, Apache Cassandra, Redis, Couchbase and Apache HBase.
 
+# Connect RDS to EC2 Instance-
+- Create Database-
+- Add an inbound rule:
+    - Type: MySQL/Aurora (or PostgreSQL)
+    - Protocol: TCP
+    - Port: 3306 (or 5432)
+    - Source: The security group of your EC2 instance or the specific IP range.
+      
+- Launch an EC2 Instance-
+- Configure Security Groups:
+    - Create a security group (or modify an existing one) to allow inbound traffic on the database port (e.g., 3306, 5432).
+    - Set the source to the security group of your EC2 instance or its public IP.
+
+- Configure mysql on EC2-
+    -  wget https://repo.mysql.com/mysql80-community-release-el9.rpm
+    -  yum install mysql80-community-release-el9.rpm
+    -  yum install mysql-community-server
+    -  systemctl start mysqld
+    -  systemctl status mysqld
+- Create Mysql Database-
+    - wget https://repo.mysql.com/mysql80-community-release-el9.rpm
+    - yum install mysql80-community-release-el9.rpm
+    - yum install mysql-community-server
+    - systemctl start mysqld
+    - systemctl status mysqld
+- Connect to the RDS Instance-
+    - mysql -h your-rds-endpoint -P 3306 -u your-username -p
+    
 
 
 
