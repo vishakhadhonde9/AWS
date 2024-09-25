@@ -55,15 +55,18 @@
     -  yum install mysql-community-server
     -  systemctl start mysqld
     -  systemctl status mysqld
-- Create Mysql Database-
-    - wget https://repo.mysql.com/mysql80-community-release-el9.rpm
-    - yum install mysql80-community-release-el9.rpm
-    - yum install mysql-community-server
-    - systemctl start mysqld
-    - systemctl status mysqld
 - Connect to the RDS Instance-
-    - mysql -h your-rds-endpoint -P 3306 -u your-username -p
-    
+    - mysql -h your-rds-endpoint -P 3306 -u your-username -p.
+ 
+- SQL Query:
+    -  create database Class;
+    -  use class;
+    -  INSERT INTO  mysql_students VALUES(1,'Maria Anders',750);
+       INSERT INTO  mysql_students VALUES(2,'Ana Trujillo',890);
+       INSERT INTO  mysql_students VALUES(3,'Antonio Moreno',400);
+       INSERT INTO  mysql_students VALUES(4,'Thomas Hardy',910);
+       INSERT INTO  mysql_students VALUES(5,'Christina',600);
+   -  select * from mysql_students;
 
 
 
