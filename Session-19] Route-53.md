@@ -37,6 +37,43 @@
   - Send Back to User: The resolver sends the IP address back to your device.
 - Step 9: Connect to the Website
   - Connect to the Server: With the IP address, your device can now establish a connection to the website's server and load the webpage.
+
+# Records-
+- Describe how to route traffic for a domain and its subdomains.
+- A Domain Name System (DNS) record is a set of instructions used to connect domain names with internet protocol (IP) addresses within DNS servers.
+
+## Types of Records-
+- The following are the five major DNS record types:
+  - A record
+  - AAAA record
+  - CNAME record
+  - Nameserver (NS) record
+  - Mail exchange (MX) record
+
+##### 1. A records -
+- The A record is the most important DNS record type.
+- The "A" in A record stands for "address." An A record shows the IP address for a specific hostname or domain.
+- They create a direct connection between an IPv4 address and a domain name.
+
+#### 2. AAAA records -
+- Like A records, this type of record connects domain names to IPv6 addresses.
+- IPv6 addresses have more numerals than IPv4 address and are becoming more common as options for IPv4 addresses are running out. 
+
+#### 3. CNAME records-
+- Canonical name records, or CNAME records, direct an alias domain to a canonical domain.
+- This means that this type of record is used to link subdomains to domain A or AAAA records.
+- For example, instead of creating two A records for www.example.com and product.example.com, you could link product.example.com to a CNAME record that is then linked to an A record for example.com. The value is that if the IP address changes for the root domain, only the A record will have to be updated and the CNAME will update accordingly.
+
+#### 4. NS records -
+- Nameserver, or NS records, show which DNS server is acting as the authoritative nameserver for your domain.
+- Authoritative nameservers contain the final information about a specific domain and its corresponding IP address.
+- An NS record points to all of the different records your domain holds. Without NS records, users will not be able to access your website. 
+
+#### 5. MX records -
+- Mail exchange, or MX records, direct emails to your domain mail server.
+- These records, along with an email server, allow for the creation of individual email accounts, such as user@example.com, that are linked to the domain (example.com).
+
+
  
 # Routing Policy-
 - **Simple routing policy –** Use for a single resource that performs a given function for your domain, for example, a web server that serves content for the example.com website. You can use simple routing to create records in a private hosted zone.
