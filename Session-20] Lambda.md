@@ -19,6 +19,24 @@
 
 
 
+# Code for lambda Function-
+import json
+import boto3
+import urllib
+
+def lambda_handler(event, context):
+    s3_client = boto3.client('s3')  
+    bucket_name = event['Records'][0]['s3']['bucket']['name']
+    key = urllib.parse.unquote_plus(event['Records'][0]['s3']['object']['key']
+
+    message = 'File ' + key + ' is successfully uploaded in bucket ' + bucket_name
+    print(message)
+    
+    response = s3_client.get_object(Bucket=bucket_name, Key=key)
+    contents = response["Body"].read().decode('utf-8')  # Specify the encoding
+    contents = json.loads(contents)
+    print("The data in the file is : \n", contents)
+	
 
 
 
