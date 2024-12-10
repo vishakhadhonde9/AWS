@@ -21,10 +21,10 @@
 - offer a balance of price and performance for a variety of workloads. 
 - It can be of two types:
 - **GP2-**
-     - Default EBS volume types for EC2.
      - Highly recomended as boot volumes for EC2.
      - can be range in 1 GiB to 16 TiB
 - **GP3-**
+     -  Default EBS volume types for EC2.
      -  The most recent generation of SSD general purpose volumes are referred to as gp3 volumes.
      -   At a cheaper cost than gp2.
 
