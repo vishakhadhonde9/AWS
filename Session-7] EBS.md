@@ -36,7 +36,7 @@
 # 2] Hard Disk Drive-
 - Hard Disk Drives are usually preferred in cases where high Throughput is required during a large and sequential I/O operation such as reading video files, logs processing, etc.
 - HDDs are cheaper compared to SSDs and ideal for tasks that require high throughput.
-- HDD is not  botable.
+- HDD is not  bootable.
 - It can be of two types: Throughput Optimized HDD and Cold HDD.
 - **Throughput Optimized HDD (st1)-**
       - It provide high throughput for accessing large and sequential data and support frequently accessed storage requirements.
