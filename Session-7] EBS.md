@@ -28,7 +28,7 @@
      -  The most recent generation of SSD general purpose volumes are referred to as gp3 volumes.
      -   At a cheaper cost than gp2.
 
-### 3] Provisioned IOPS SSD-
+### 2] Provisioned IOPS SSD-
 - Privisioned IOPS SSD are designed to meet the needs of I/O intensive workloads, particularly database workloads.
 - can range in size from 4 GiB to 16 TiB.
 - It can be of three types: io1, io2 and io2 block express.
