@@ -4,7 +4,11 @@
 
 ![image](https://github.com/user-attachments/assets/f1cfccb9-f45e-4ab9-bebe-99a61d6bf308)
 
-  
+## Steps-
+#### 1)
+
+
+
 - **Transitive Peering-**
   - VPC peering does not support transitive routing, meaning you cannot route traffic through a peered VPC to reach another VPC.
   - To connect multiple VPCs, you need to establish direct peering connections between each pair of VPCs
