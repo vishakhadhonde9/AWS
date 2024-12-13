@@ -1,6 +1,9 @@
 # VPC Peering-
 - VPC peering is a networking connection between two VPC that allows them to communicate with each other as if they were part of the same network.
 - It enables private connectivity between resources in different VPCs.
+
+![image](https://github.com/user-attachments/assets/f1cfccb9-f45e-4ab9-bebe-99a61d6bf308)
+
   
 - **Transitive Peering-**
   - VPC peering does not support transitive routing, meaning you cannot route traffic through a peered VPC to reach another VPC.
