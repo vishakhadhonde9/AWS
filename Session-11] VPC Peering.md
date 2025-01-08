@@ -1,5 +1,5 @@
 # VPC Peering-
-- VPC peering is a networking connection between two VPC that allows them to communicate with each other as if they were part of the same network.
+- VPC peering is a networking connection between two or more VPC that allows them to communicate with each other as if they were part of the same network.
 - It enables private connectivity between resources in different VPCs.
 
 ![image](https://github.com/user-attachments/assets/f1cfccb9-f45e-4ab9-bebe-99a61d6bf308)
