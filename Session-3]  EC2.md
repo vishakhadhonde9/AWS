@@ -24,7 +24,7 @@
 
 
 ## 1] General Purpose Instance-
-- It provides a good range of computing, memory and networking resources and making them suitable for a wide variety of applications.
+- It provides a good range of computing, memory, storage and networking resources and making them suitable for a wide variety of applications.
 - These instances are useful for wide range of applications like web servers, executing codes, repositories that require such resources in equal parts.
 - Examples: t2, t3, t4, m5 and m6 etc.
 
