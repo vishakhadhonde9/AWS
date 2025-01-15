@@ -99,7 +99,7 @@
                      - Copy the UUID from the output.
                   
                   2. Edit `/etc/fstab`:
-                     sudo nano /etc/fstab
+                     sudo vi /etc/fstab
                   - Add an entry for the new partition. Use the UUID from the previous step. For example:
                     
                        UUID=your-uuid-here /mnt/mydata ext4 defaults,nofail 0 2
