@@ -86,8 +86,6 @@
 
 - **Latency routing policy –** Use when you have resources in multiple AWS Regions and you want to route traffic to the Region that provides the best latency. You can use latency routing to create records in a private hosted zone.
 
-- **IP-based routing policy –** Use when you want to route traffic based on the location of your users, and have the IP addresses that the traffic originates from.
-
 - **Multivalue answer routing policy –** Use when you want Route 53 to respond to DNS queries with up to eight healthy records selected at random. You can use multivalue answer routing to create records in a private hosted zone.
 
 - **Weighted routing policy –** Use to route traffic to multiple resources in proportions that you specify. You can use weighted routing to create records in a private hosted zone.
