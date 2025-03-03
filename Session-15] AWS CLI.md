@@ -14,4 +14,6 @@
 - Create VPC:
     - aws ec2 create-vpc --cidr-block 10.0.0.0/16 --output json
 
+- Create S3 Bucket -
+    - aws s3api create-bucket --bucket <BUCKET_NAME> --region <REGION>
 
