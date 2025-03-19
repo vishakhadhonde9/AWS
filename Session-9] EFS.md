@@ -41,8 +41,9 @@
    - SSH into each EC2 instance.
    - Install the NFS client using the following commands:
    
-     sudo yum -y update
-     sudo yum -y install nfs-utils
+             sudo yum -y update
+             sudo yum -y install nfs-utils
+
 5. Mount the EFS File System
    - Create a directory to mount the EFS:
      sudo mkdir /mnt/efs
