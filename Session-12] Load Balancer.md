@@ -26,3 +26,18 @@
 #### 3] Gateway Load Balancer-
 - Operates at Layer 3 (Network Layer) and Layer 4 (Transport Layer) of the OSI model.
 - Gateway Load Balancer helps you easily deploy, scale, and manage your third-party virtual appliances like firewall.
+
+
+
+# AWS Global Accelerator -
+- AWS Global Accelerator is a networking service that improves both the availability and performance of your applications by directing user traffic through the high-speed AWS global network, instead of the slower public internet.
+- It optimizes the path from your users (local or global) to your application endpoints, ensuring faster response times, automatic failover, and static IP addresses for consistent access.
+- If one region goes down, traffic is shifted to another.
+- Routes users to the closest healthy AWS region.
+
+### How it works -
+- You get 2 static IP addresses from AWS.
+- Your users connect to these IPs (instead of directly to your app).
+- AWS routes traffic through its global backbone network.
+- Requests reach your application endpoint (like an ALB, NLB, or EC2) using the fastest and healthiest path.
+
