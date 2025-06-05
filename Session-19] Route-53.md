@@ -38,6 +38,34 @@
 - Step 9: Connect to the Website
   - Connect to the Server: With the IP address, your device can now establish a connection to the website's server and load the webpage.
 
+# Hosted Zones-
+- Hosted zone is a container that holds DNS records (like A, CNAME, MX, etc.) for a domain.
+- It defines how traffic should be routed for your domain and subdomains.
+
+## Types of Hosted Zones-
+- There are two types of hosted zones in Route 53:
+
+### 1] Public Hosted Zone
+- Used for publicly accessible domains (e.g., example.com).
+- Routes traffic from the internet to your resources (like EC2, S3, CloudFront).
+- Example DNS records:
+
+    - A record → Points to an IP (e.g., 192.0.2.1)
+    
+    - CNAME → Redirects to another domain (e.g., www.example.com → example.com)
+    
+    - MX → Email routing (e.g., for Gmail, Outlook)
+
+
+### 2] Private Hosted Zone
+- Used for internal (private) DNS within an AWS VPC.
+- Resolves domain names only within your AWS network (not publicly accessible).
+- Example use cases:
+  - database.internal → Points to an RDS instance inside a VPC
+  - app.company.local → Internal app accessible only by employees
+  
+
+
 # Records-
 - Describe how to route traffic for a domain and its subdomains.
 - A Domain Name System (DNS) record is a set of instructions used to connect domain names with internet protocol (IP) addresses within DNS servers.
