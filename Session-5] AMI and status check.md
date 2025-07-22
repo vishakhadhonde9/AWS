@@ -28,7 +28,7 @@
 - Amazon EC2 performs these checks automatically and reports their results to help you identify issues.
 - Amazon EC2 performs automated checks on every running EC2 instance to identify hardware and software issues.
 - You can view the results of these status checks to identify specific and detectable problems.
-- There are two types of status checks:
+- There are three types of status checks:
      - System status checks
      - Instance status checks
      - Attached EBS status checks
