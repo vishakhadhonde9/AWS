@@ -1,6 +1,6 @@
 # Bastion Host -
 -  Bastion Host is a secure entry point to your private network or private subnet in the cloud.
--  Acts as Jump Server server, for accessing private instances located within an AWS VPC.
+-  Acts as Jump Server, for accessing private instances located within an AWS VPC.
 -  Its primary purpose is to provide a controlled and secure point of entry into a private network from an external network, such as the internet.
 -  From the Bastion Host, you connect to private EC2 instances that do not have public IP addresses.
 -  This avoids exposing your private resources directly to the internet.
@@ -11,15 +11,15 @@
 
 - Create Subnets
 
-    Public Subnet: 10.0.1.0/24
-    Private Subnet: 10.0.2.0/24
+   - Public Subnet: 10.0.1.0/24
+   - Private Subnet: 10.0.2.0/24
 
 - Create and Attach Internet Gateway to VPC
 
 - Create Route Tables
 
-    PublicRT → route 0.0.0.0/0 to IGW, associate with Public Subnet
-    PrivateRT → associate with Private Subnet
+   - PublicRT → route 0.0.0.0/0 to IGW, associate with Public Subnet
+   - PrivateRT → associate with Private Subnet
 
 - Create Security Groups
 
