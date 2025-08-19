@@ -86,3 +86,44 @@
   - Durability: 99.999999999% (11 9’s) durability over a given year.
   - Availability: 99.9% availability over a given year.
   - Cost: Lowest cost for long-term storage; higher retrieval costs.
+
+# Encryption in S3 -
+## Encryption - 
+- Encryption in Amazon S3 refers to the process of protecting data by converting it into a format that is unreadable to unauthorized users.
+- Only someone with the correct encryption key can decrypt and access the original data.
+- Amazon S3 offers a variety of encryption options to protect your data at rest (while it's stored in S3) and in transit (as it's uploaded or downloaded).
+- Since January 2023, Amazon S3 automatically encrypts all new object uploads to all buckets using Server-Side Encryption with Amazon S3-Managed Keys (SSE-S3) as the default.
+
+## Types of Encryption in S3 -
+### 1] Client-Side Encryption -
+- Data is encrypted on the client side (your device) before it is sent to the server. Only the encrypted data is stored or transmitted.
+- The server stores the encrypted data but never sees the unencrypted data or keys.
+- You encrypt data before uploading it to S3, and decrypt it after downloading.
+- You manage your own keys and encryption process.
+- More secure but also more complex.
+- AWS SDKs can help implement client-side encryption using KMS or custom keys.
+
+### 2] Server-Side Encryption -
+- Data is encrypted by the server after it is received from the client. The server manages the encryption and decryption processes.
+- Encryption is handled by AWS, and data is automatically encrypted before being written to disk, and automatically decrypted when you access it.
+- You don’t need to change your application logic to use SSE.
+
+
+### Types of Server-Side Encryption (SSE) in S3 -
+### 1] Server-Side Encryption with S3-Managed Keys (SSE-S3):
+- This is the default for all new object uploads.
+- S3 handles all the key management for you.
+- It uses a strong encryption algorithm (AES-256).
+- Each object is encrypted with a unique key, which is then encrypted with a master key that is regularly rotated by S3.
+
+### 2] Server-Side Encryption with AWS Key Management Service (SSE-KMS):
+- This method integrates S3 with the AWS Key Management Service (KMS).
+- It provides more control and an audit trail over the keys used to encrypt your data.
+- You can use a default AWS-managed KMS key or a customer-managed key.
+- Slightly more expensive than SSE-S3.
+
+### 3] Server-Side Encryption with Customer-Provided Keys (SSE-C):
+- You generate and supply your own encryption key when uploading and downloading objects.
+- AWS uses it to encrypt/decrypt the object, but never stores the key.
+- You are fully responsible for key management.
+
