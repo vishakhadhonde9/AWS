@@ -40,3 +40,29 @@
             ssh -i <path_to_private_instance_key_on_bastion_host> ec2-user@<Private_Instance_Private_IP>
 
   - Note: If your private instances use a different key pair than the bastion host, you will need to copy the private key for the private instances to the bastion host.
+
+# Transit Gateway -
+- It acts as a central hub, or virtual router, that connects multiple virtual private clouds (VPCs) and on-premises networks.
+- This "hub-and-spoke" model eliminates the need for complex and numerous peering connections between each individual network.
+- Instead of creating a separate connection from every VPC to every other VPC, you connect all of your networks to a single transit gateway. The transit gateway then handles the routing of traffic between all the connected networks.
+
+## Implementation -
+## 1]Create Transit Gateway
+- Go to VPC Console → Transit Gateways → Create Transit Gateway
+- Name: MyTGW,Keep defaults (ASN, DNS support = enabled).
+
+## 2] Attach VPCs to Transit Gateway
+- Go to Transit Gateway Attachments → Create attachment
+- Select MyTGW
+- Choose VPC-1, pick at least 1 subnet per AZ → Create.
+- Repeat for VPC-2 and VPC-3.
+
+## 3] Update Transit Gateway Route Table
+- Go to TGW Route Tables → Main route table
+- Add routes for each VPC CIDR to the right VPC attachment.
+
+
+## 4] Update Each VPC’s Route Table
+- Go to Route Tables of each VPC.
+- Add routes to the other VPC CIDRs with Target = MyTGW.
+
